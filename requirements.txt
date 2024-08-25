@@ -1,5 +1,7 @@
 streamlit
 PyPDF2
-langchain
+langchain-openai
 openai
 tiktoken
+langchain-community
+transformers
