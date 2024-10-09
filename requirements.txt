@@ -5,3 +5,4 @@ openai
 tiktoken
 langchain-community
 transformers
+faiss-cpu
