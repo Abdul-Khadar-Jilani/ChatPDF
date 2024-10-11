@@ -24,9 +24,9 @@ def main():
     #openai_api_key = st.text_input("Enter your OpenAI API Key", type="password")
     # Access the OpenAI API key from Streamlit secrets
     openai_api_key = st.secrets["openai"]["api_key"]
-    if not openai_api_key:
-        st.warning("Please enter your OpenAI API Key.")
-        st.stop()
+    # if not openai_api_key:
+    #     st.warning("Please enter your OpenAI API Key.")
+    #     st.stop()
 
     # Upload PDF file
     pdf_file = st.file_uploader("Upload your PDF", type=["pdf"])
