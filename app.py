@@ -21,8 +21,9 @@ def main():
     st.title("Chat with your PDF")
     
     # Prompt for OpenAI API key
-    openai_api_key = st.text_input("Enter your OpenAI API Key", type="password")
-    
+    #openai_api_key = st.text_input("Enter your OpenAI API Key", type="password")
+    # Access the OpenAI API key from Streamlit secrets
+    openai_api_key = st.secrets["openai"]["api_key"]
     if not openai_api_key:
         st.warning("Please enter your OpenAI API Key.")
         st.stop()
